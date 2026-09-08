@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mi Juego</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
+    }
+
+    #game {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Evita barras de desplazamiento */
+    body {
+        overflow: hidden;
+    }
+</style>
+
+</head>
+
+<body>
+
+
+<div id="game"></div>
+
+<script>
+    // Elemento donde se mostrará EmulatorJS
+    EJS_player = "#game";
+
+    // Emulador de Game Boy
+    EJS_core = "gb";
+
+    // ROM
+    EJS_gameUrl = "PYell.gb";
+
+    // Archivos de EmulatorJS
+    EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+
+    // Controles de Game Boy
+    EJS_controlScheme = 2;
+
+    // Mostrar botón de pantalla completa
+    EJS_fullscreenOnLoaded = false;
+
+    // Intentar cargar automáticamente el juego
+    EJS_startOnLoad = true;
+</script>
+
+<script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+
+</body>
+</html>
