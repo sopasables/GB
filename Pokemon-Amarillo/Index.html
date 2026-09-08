@@ -29,12 +29,12 @@
     body {
         overflow: hidden;
     }
+    
 </style>
 
 </head>
 
 <body>
-
 
 <div id="game"></div>
 
@@ -43,25 +43,22 @@
     EJS_player = "#game";
 
     // Emulador de Game Boy
-    EJS_core = "gb";
+    EJS_core = "gbc";
 
     // ROM
     EJS_gameUrl = "PYell.gb";
 
-    // Archivos de EmulatorJS
-    EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
-
     // Controles de Game Boy
     EJS_controlScheme = 2;
 
-    // Mostrar botón de pantalla completa
-    EJS_fullscreenOnLoaded = false;
-
     // Intentar cargar automáticamente el juego
-    EJS_startOnLoad = true;
+    EJS_startOnLoaded = true;
+
+    // Archivos de EmulatorJS
+    EJS_pathtodata = "https://cdn.jsdelivr.net/gh/ethanaobrien/emulatorjs@main/data/";
 </script>
 
-<script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ethanaobrien/emulatorjs@main/data/loader.js"></script>
 
 </body>
 </html>
